@@ -28,7 +28,7 @@
           </thead>
           <tbody id="tabela-pacientes">
             <tr class="paciente" id="primeiro-paciente">
-              <td class="info-nome">Paulo</td>              
+              <td class="info-nome">Paulo</td>
               <td class="info-peso">100</td>
               <td class="info-altura">2.00</td>
               <td class="info-gordura">10</td>
@@ -62,9 +62,37 @@
               <td class="info-gordura">19</td>
               <td class="info-imc">0</td>
             </tr>
-
+            <tr class="paciente" id="quinto-paciente">
+              <td class="info-nome">Cesar Augusto</td>
+              <td class="info-peso">106</td>
+              <td class="info-altura">1.78</td>
+              <td class="info-gordura">19</td>
+              <td class="info-imc">0</td>
+            </tr>
           </tbody>
         </table>
+      </section>
+      <section class="container">
+        <h2 id="titulo-form">Adicionar novo Paciente</h2>
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome" value="" class="campo" placeholder="Digite o nome do seu paciente">
+          </div>
+          <div class="grupo">
+            <label for="peso">Peso:</label><br>
+            <input id="peso" type="text" name="peso" value="" placeholder="Digite o peso do seu paciente" class="campo-medio">
+          </div><br><br>
+          <div class="grupo">
+            <label for="altura">Altura:</label><br>
+            <input id="altura" type="text" name="altura" value="" placeholder="Digite a altura do seu paciente" class="campo-medio">
+          </div><br><br>
+          <div class="grupo">
+            <label for="gordura">% de Gordura:</label><br>
+            <input id="gordura" type="text" name="gordura" value="" placeholder="Digite a porcentagem de gordura do seu paciente" class="campo-medio">
+          </div><br><br>
+          <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+        </form>
       </section>
     </main>
     <script src="js/principal.js">

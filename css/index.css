@@ -20,5 +20,103 @@ header h1{
 header h2{
   font-size: 2em;
   display: inline-block;
+  vertical-align: middle;
+}
 
+header h2{
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .container::before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.container{
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+section{
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+section h2{
+  font-size: 3em;
+  display: block;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: .5em;
+}
+
+table{
+  width: 100%;
+  margin-bottom: .5em;
+  table-layout: fixed;
+}
+td, th {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th{
+  font-weight: bold;
+  background-color: #EEE;
+}
+
+
+.campo-medio{
+  width:33%;
+  float: left;
+}
+
+.campo-medio{
+  padding-right: .5em;
+}
+
+fieldset input{
+  border: 1px solid #ccc;
+  padding: .7em;
+}
+
+button{
+  padding: .5em 2em;
+  border: 0;
+  border-bottom: 3px solid;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 0;
+  margin-top: -3px;
+  color: #fff;
+  background-color: #04324c;
+  width: 20%;
+  display: block;
+  clear: both;
+  margin-bottom: 200px;
+}
+button:active{
+  margin-top:0px;
+  border: 0;
+}
+button[disable=disable], button:disable{
+  background-color: gray;
+  border-color: darkgray;
+}
+.adicionar-paciente{
+  margin-top: 30px;
+}
+.campo-invalido{
+  border: 1px solid red;
+}
+#mensagem-erro{
+  color: red;
+}
+.paciente-invalido{
+  background-color: lightcoral;
 }
